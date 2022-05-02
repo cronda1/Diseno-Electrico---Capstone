@@ -6,7 +6,7 @@
 
 //Selecciona el pin al que se conecta el sensor de temperatura
 
-const int oneWireBus = 4;
+const int oneWireBus = 2;
 
 //Comunicar que vamos a utilizar la interfaz oneWire
 
@@ -48,6 +48,6 @@ void loop() {
 
   // Lectura de la temperatura cada 5 segundos
 
-  delay(5000);
+  delay(1000);
 
 }
