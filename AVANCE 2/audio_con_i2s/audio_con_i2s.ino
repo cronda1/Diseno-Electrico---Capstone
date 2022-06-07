@@ -1,5 +1,5 @@
-#include <driver/i2s.h>
 
+#include <driver/i2s.h>
 
 const double samplingFrequency = 44100;
 const int SAMPLEBLOCK = 8;
@@ -23,9 +23,8 @@ void loop() {
                                       portMAX_DELAY); // no timeout
   for (uint16_t i = 0; i < SAMPLEBLOCK; i++) {
     Serial.printf("%7d,",samples[i]); 
-    
   }
-  
+    Serial.printf("\n"); 
 }  
  
 void setupI2S() {
